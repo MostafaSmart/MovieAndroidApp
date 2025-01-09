@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/backGround2"
+
+    android:layoutDirection="rtl"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    tools:ignore="MissingPrefix,UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivCloseDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_standard_new"
+            android:layout_marginTop="@dimen/spacing_standard"
+
+            android:padding="@dimen/spacing_control"
+            android:src="@drawable/back_icon" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/call_icon"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/spacing_control" />
+
+        <TextView
+            android:id="@+id/txtDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:gravity="center_horizontal"
+            android:text="MOVIE LITE"
+            style="@style/textColor1Wite_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_large" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xmedium"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stroke_width"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/spacing_standard"
+                android:background="#B6ADADAD" />
+
+            <TextView
+                android:id="@+id/tvHome"
+
+                style="@style/SidebarLabel.SidebarOption"
+                android:drawableStart="@drawable/icon_home"
+                android:gravity="center_vertical"
+
+                android:text="الرئيسية" />
+
+
+            <TextView
+                android:id="@+id/tvCatogrys"
+                style="@style/SidebarLabel.SidebarOption"
+                android:drawableStart="@drawable/icon_type"
+                android:gravity="center_vertical"
+                android:text="التصنيفات" />
+
+
+            <TextView
+                android:id="@+id/tvBest"
+                style="@style/SidebarLabel.SidebarOption"
+                android:drawableStart="@drawable/icon_type"
+                android:gravity="center_vertical"
+                android:text="الافضل تقيمياً" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stroke_width"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/spacing_standard"
+                android:background="#B6ADADAD" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

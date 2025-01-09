@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/backGround2"
+
+    tools:context=".ui.activites.MainActivity"
+    android:id="@+id/root_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/backGround2"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:padding="@dimen/spacing_standard"
+                android:layout_height="wrap_content">
+                <!-- ViewPager2 لعرض الصور -->
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_170sdp" />
+
+                <!-- WormDotsIndicator يظهر أسفل الصور -->
+                <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                    android:id="@+id/wormDotsIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    app:dotsColor="@color/blue_lite"
+                    app:dotsCornerRadius="8dp"
+                    app:dotsSize="10dp"
+                    />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="افضل الافلام"
+                android:textSize="@dimen/font_size_large"
+                android:textStyle="bold"
+                style="@style/textColor1Wite_black"
+                android:layout_height="wrap_content"/>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:id="@+id/grid_homeMoves"
+                android:layout_height="match_parent">
+
+            </GridView>
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
